@@ -1,21 +1,19 @@
 import React from 'react';
+import CartButton from '../CartButton/CartButton';
+import SearchBar from '../searchbar/searchbar';
+
+import './header.css';
 
 function Header() {
   return(
     
-    <header className="header" style={{background: 'blue'}}>
+    <header className="header">
       <div className="container">
-        <form>
-          <input type="search" placeholder="Pesquisar"className="search_input"/>
-        
-          <button type="submit" className="search_button">
-            icone
-          </button>
-        </form>
-
+        <SearchBar />
+        <CartButton />
       </div>
     </header>
-  );
+  ); 
 }
 
 export default Header;
